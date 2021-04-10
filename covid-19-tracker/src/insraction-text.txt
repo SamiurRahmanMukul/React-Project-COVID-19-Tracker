@@ -1,0 +1,10 @@
+            </> COVID-19 Tracker | React Project</>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    #1: Node Package Install:
+        1. axios --> npm install --save axios
+        2. chart --> npm install --save react-chartjs-2
+        3. animation --> npm install --save react-countup
+    
+    #2: All Package Install:
+        * In A Command --> npm install --save axios react-chartjs-2 react-countup classnames
