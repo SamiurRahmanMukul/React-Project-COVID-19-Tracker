@@ -8,9 +8,10 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "chart.js": "^3.3.2",
     "classnames": "^2.3.1",
     "react": "^17.0.2",
-    "react-chartjs-2": "^2.11.1",
+    "react-chartjs-2": "^3.0.3",
     "react-countup": "^4.3.3",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -39,5 +40,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }
