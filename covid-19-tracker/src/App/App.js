@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { fetchData } from "./../API";
 import CoronaVirus from "./../Assets/Images/corona-virus-logo.jpg";
-import { Cards, Chart, CountryPicker } from "./../Components";
+import { Cards, Chart, CountryPicker, Footer } from "./../Components";
 import Styles from "./App.module.css";
 
 export default class App extends Component {
@@ -24,12 +24,15 @@ export default class App extends Component {
     const { data, country } = this.state;
 
     return (
-      <div className={Styles.container}>
-        <img className={Styles.image} src={CoronaVirus} alt="covid-19" />
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} />
-      </div>
+      <>
+        <div className={Styles.container}>
+          <img className={Styles.image} src={CoronaVirus} alt="covid-19" />
+          <Cards data={data} />
+          <CountryPicker handleCountryChange={this.handleCountryChange} />
+          <Chart data={data} country={country} />
+        </div>
+        <Footer />
+      </>
     );
   }
 }
